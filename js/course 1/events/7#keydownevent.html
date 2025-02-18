@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    
+</head>
+<body>
+    <h1>Keydown Event</h1>
+    <p>Press a key on your keyboard</p>
+
+    <div></div>
+
+    <!-- <script>
+        document.addEventListener('keydown', function(){
+            alert('A key was pressed!');
+        });
+    </script> -->
+
+    <script>
+        document.addEventListener('keydown', function(evt){
+            /* alert(`the ${evt.which} is pressed!`); */
+            alert(`the ${evt.key} is pressed!`);
+        });
+    </script>
+</body>
+</html>

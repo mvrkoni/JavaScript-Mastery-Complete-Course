@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Examples 7</title>
+</head>
+<body>
+    <h1>DOM Examples</h1>
+    <div id="special">
+        <p class="someclass">Here is a paragraph</p>
+        <p>Here is a another paragraph</p>
+        <p>Here is a one more paragraph</p>
+    </div>
+    <form>
+        <label>
+            <input type="checkbox"> YES!
+        </label>
+    </form>
+    
+    <script>
+        var myCheckbox = document.querySelector('input');
+        myCheckbox.setAttribute('checked', 'checked'); //dodaję sobie label i mogę ustawić z poziomu kodu że atrybut checked ma być sorawdzany jako checked (powstaje checked="checked" w inpucie)
+    </script>
+</body>
+</html>

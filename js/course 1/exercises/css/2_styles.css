@@ -1,0 +1,61 @@
+body, p { 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 100px; background: #71717171;
+}
+
+#content {
+    margin: 100px auto 20px auto;
+    border: 10px solid #4C4C4C;
+    width: 400px;
+    height: 266px;
+    position: relative;
+}
+
+#content img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+p {
+    text-align: center;
+}
+
+#links {
+    width: 420px;
+    display: flex;
+    margin: auto;
+}
+
+#text {
+
+
+    font-family: Arial;
+    text-transform: uppercase;
+    text-align: center
+}
+
+#links a:hover {
+    background: #A51D1F;
+    color: #fff;
+}
+
+/* Animation styles */
+
+.fadeinimg {
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}

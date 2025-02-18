@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Examples 5</title>
+</head>
+<body>
+    <h1>DOM Examples</h1>
+    <div id="special">
+        <p class="someclass">Here is a paragraph</p>
+        <p>Here is a another paragraph</p>
+        <p>Here is a one more paragraph</p>
+    </div>
+
+    <script>
+        /* var myDiv = document.getElementById('special'); */
+        /* var myDiv = document.querySelector('#special');
+        myDiv.innerHTML = "<p> Here is my new paragaph</p>"; //zamienia paragraf na nowy */
+
+        //||
+
+        document.querySelector('#special').innerHTML = "<p> Here is my new paragaph</p>"; //dodaje coś do dokumentu html
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>JavaScript Events 1</h1>
+    
+    <button>Don't Press Me!</button>
+
+    <!-- <script>
+        var btn = document.querySelector('button');
+
+        function ouch(){
+            alert("I told you do not press me!");
+        }
+
+        /* btn.onclick = ouch; //jest różnica między ouch a ouch(), to drugie uruchamia się od razu po załadowanaiu strony */
+        
+        btn.addEventListener('click', ouch);
+    </script> -->
+
+    <!-- <script>
+        var btn = document.querySelector('button');
+
+        btn.addEventListener('click', function(){ 
+            alert("I told you do not press me!"); 
+        });
+    </script> -->
+
+    <script>
+        var btn = document.querySelector('button');
+
+        btn.addEventListener('click', function(event){ 
+
+            event.target.style.backgroundColor = "red";
+            
+            alert("I told you do not press me!"); 
+        });
+    </script>
+</body>
+</html>

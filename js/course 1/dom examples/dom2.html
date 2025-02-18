@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Examples 2</title>
+</head>
+<body>
+    <h1>DOM Examples</h1>
+    <div id="special">
+        <p class="someclass">Here is a paragraph</p>
+        <p>Here is a another paragraph</p>
+        <p>Here is a one more paragraph</p>
+    </div>
+    
+    <script>
+        /* var ps = document.getElementsByTagName('p');
+        for(var i = 0; i < ps.length; i++) {
+            ps[i].style.color = "red";
+            alert(`showing paragaph ${i}`)
+        } */
+
+        var myClass = document.getElementsByClassName('someclass');//se klase zmień w p potem
+        myClass[0].style.color = "red";
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <h1>Loops in JS</h1>
+
+    <script>
+        
+        /* for(var i = 1; i <= 10; i++){
+            console.log(i);
+        } */
+
+        var colors = ['red', 'blue', 'yellow', 'green', 'orange', 'purple'];
+        
+        /* for(var i = 0; i <= colors.length-1; i++){
+            console.log(colors[i]);
+        } */
+
+        /* for(var icznamber of colors){
+            console.log(icznamber);
+        } */
+
+        var statement = "A string can be treated like an array";
+
+        /* for(var i = 0; i < statement.length; i++){
+            console.log(statement[i]);
+        } */
+
+        /* for(var iczleter of statement){
+            console.log(iczleter);
+        } */
+
+        /* var incrementor = 1;
+        var text = "";
+
+        while(incrementor <= 10){
+            //text += "The incrementor has gone up to " + incrementor + "\n";
+            text += `The incrementor has gone up to ${incrementor} \n`;
+            incrementor++;
+        }
+
+        console.log(text); */
+
+        var i = 1;
+        var text = "";
+
+        while(i <= 10){
+            text += `The incrementor is ${i} the incrementor squared is ${i*i} \n`;
+            i++;
+        }
+
+        console.log(text);
+    </script>
+</body>
+</html>

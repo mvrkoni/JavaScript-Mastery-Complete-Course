@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Examples 4</title>
+</head>
+<body>
+    <h1>DOM Examples</h1>
+    <div id="special">
+        <p class="someclass">Here is a paragraph</p>
+        <p>Here is a another paragraph</p>
+        <p>Here is a one more paragraph</p>
+    </div>
+
+    <script>
+        var myText = document.querySelectorAll('#special p'); //definiuje całą klase special w divie, każde p
+        for(var i = 0; i < myText.length; i++) {
+            myText[i].style.color = "red";
+        }
+    </script>
+</body>
+</html>

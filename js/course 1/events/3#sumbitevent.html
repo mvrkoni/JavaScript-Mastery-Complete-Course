@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>JavaScript Events</h1>
+
+    <form method="get">
+        <label>Your Name: <input type="text" name="name"></label>
+        <input type="submit" value="send">
+    </form>
+
+    <script>
+        var myForm = document.querySelector('form');
+        myForm.addEventListener('submit', function(evt){
+            evt.preventDefault(); //stopuje automatyczne działanie submitu w tym przypadku, żeby potem zrobić to ręcznie
+            var formData = document.querySelector('input').value;
+            alert(formData);
+        } );
+    </script>
+</body>
+</html>

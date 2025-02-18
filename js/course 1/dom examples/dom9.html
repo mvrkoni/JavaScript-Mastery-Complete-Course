@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Examples 9</title>
+</head>
+<body>
+    <h1>DOM Examples</h1>
+    <div id="special">
+        <p class="someclass">Here is a paragraph</p>
+        <p>Here is a another paragraph</p>
+        <p>Here is a one more paragraph</p>
+    </div>
+    
+    <script>
+        var myTag = document.createElement('p');
+        var myText = document.createTextNode('Here is a new paragraph');
+        myTag.appendChild(myText); //doadje węzeł do większego elementu
+        var myDiv = document.querySelector('div');
+        myDiv.appendChild(myTag);
+    </script>
+</body>
+</html>

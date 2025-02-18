@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+<body>
+    <h1>String Methods</h1>
+    <script>
+        //1
+        var myString = "I am really hungry for some";
+        console.log(myString);
+        //2
+        var myUpperString = myString.toUpperCase();
+        console.log(myUpperString);
+        //3
+        var reallyLocation = myString.search('really');
+        console.log(reallyLocation);
+        //4
+        var specialWord = myString.substr(reallyLocation, 6);
+        console.log(specialWord);
+
+        specialWord = specialWord.toUpperCase();
+
+        var newString = myString.replace('really', specialWord);
+        console.log(newString);
+        //5
+        var foods = ["oranges", "pizza", "burger", "ice cream"];
+
+        /* for(var eachFood of foods) {
+        console.log(`${myString} ${foods[eachFood]}`);
+        } */
+        //6
+        for(var i = 0; i < foods.length; i++) {
+            if (i % 2 === 0)  {
+                console.log(`${myString} ${foods[i].toUpperCase()}`);
+            }
+            else {
+                console.log(`${myString} ${foods[i]}`);
+            }
+        }
+    </script>
+</body>
+</html>
