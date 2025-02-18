@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    
+</head>
+<body>
+    <h1>Testing Scope in JS</h1>
+
+    <p>Here is a paragraph</p>
+    <p>Here is a another paragraph</p>
+    <p>Here is a one more paragraph</p>
+
+
+    <!-- <script>
+        var myPs = document.querySelectorAll('p');
+
+        for(var i = 0; i < myPs.length; i++){
+            myPs[i].style.color = "red";
+        }
+    </script> -->
+
+    <script>
+        (function(){
+            var myPs = document.querySelectorAll('p');
+
+        for(var i = 0; i < myPs.length; i++){
+            myPs[i].style.color = "red";
+        }
+        }()); //ostatni nawias jest po to aby funkcja od razu działała po uruchomieniu strony
+
+        //console.log(myPs); //nie działa bo myPs jest lokalne
+    </script>
+</body>
+</html>

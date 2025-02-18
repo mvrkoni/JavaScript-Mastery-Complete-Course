@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+    
+</head>
+<body>
+    <h1>Testing Scope in JavaScript</h1>
+
+    <p>Here is a paragraph</p>
+    <p>Here is a another paragraph</p>
+    <p>Here is a one more paragraph</p>
+
+    <script>
+        /* console.log(cheese);
+        var cheese = "yummy"; //będzie undefined bo zdefiniowalismy po wywołaniu*/
+
+        console.log(cheese);
+        const cheese = "yummy"; //to samo, ale wyskoczy błąd "cannot access cheese before initialization"
+    </script>
+</body>
+</html>

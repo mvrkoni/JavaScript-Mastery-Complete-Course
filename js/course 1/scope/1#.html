@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    
+</head>
+<body>
+    <h1>Testing Scope in JS</h1>
+
+    <script>
+        //var aVariable = "this is global";
+
+        function testScope(){
+            oopsGlobal = "This is accidentally global";
+            var aVariable = "this is local";
+            console.log(aVariable);
+        }
+
+        testScope(); //run the function
+        console.log(/* aVariable */ oopsGlobal);
+    </script>
+</body>
+</html>

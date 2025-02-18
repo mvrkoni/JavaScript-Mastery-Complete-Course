@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+    
+</head>
+<body>
+    <h1>Testing Scope in JavaScript</h1>
+
+    <p>Here is a paragraph</p>
+    <p>Here is a another paragraph</p>
+    <p>Here is a one more paragraph</p>
+
+    <script>
+
+        for(/* var */ let i = 0; i < 10; i++){
+            console.log(i);
+        }
+
+        console.log(`the value of i is ${i}`); //wyskaczy błąd, bo i nie jest zdefiniowane przy let, a przy var pojedzie cała petlę i da 10
+    </script>
+</body>
+</html>
